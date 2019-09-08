@@ -2,6 +2,7 @@
     "name": "mukulbansal.com",
     "version": "1.0.0",
     "description": "Resume of Mukul Bansal",
+    "homepage": "https://gmukul01.github.io/mukulbansal.com",
     "private": true,
     "sideEffects": false,
     "scripts": {
@@ -15,7 +16,9 @@
         "test:watch": "run-p \"type-check -- -w\" \"test:jest -- --watch\"",
         "type-check": "tsc",
         "test:jest": "jest --config config/jest/jest.config.js",
-        "watch": "webpack-dev-server --open --config config/webpack/webpack.dev.js"
+        "watch": "webpack-dev-server --open --config config/webpack/webpack.dev.js",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
     "keywords": [],
     "author": "Mukul Bansal",
@@ -56,6 +59,7 @@
         "cross-env": "^5.2.0",
         "css-loader": "^3.0.0",
         "fork-ts-checker-webpack-plugin": "^1.0.0",
+        "gh-pages": "^2.1.1",
         "html-webpack-plugin": "^3.2.0",
         "jest": "^24.5.0",
         "jest-dom": "^3.5.0",
