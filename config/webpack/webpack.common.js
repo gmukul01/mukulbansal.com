@@ -7,14 +7,14 @@ const CircularDependencyPlugin = require('circular-dependency-plugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
 const SRC = path.resolve(__dirname, '../../src');
-const DIST = path.resolve(__dirname, '../../dist');
+const BUILD = path.resolve(__dirname, '../../build');
 const ENTRY = path.resolve(__dirname, '../../src/index');
 const INDEX_HTML = path.resolve(__dirname, '../../public/index.html');
 
 module.exports = {
     entry: ['@babel/polyfill', ENTRY],
     output: {
-        path: DIST,
+        path: BUILD,
         filename: '[name].[hash].js',
         publicPath: '/'
     },
