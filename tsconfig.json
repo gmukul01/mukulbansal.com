@@ -1,0 +1,42 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "lib": ["es2017", "es2015", "dom", "es2018.promise"],
+        "esModuleInterop": true,
+        "isolatedModules": true,
+        "jsx": "react",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "noEmit": true,
+        "rootDir": "../",
+        "resolveJsonModule": true,
+        "strict": true,
+        "skipLibCheck": true,
+        "strictNullChecks": false,
+        "strictFunctionTypes": false,
+        "target": "esnext",
+        "types": ["webpack-env", "jest"],
+        "baseUrl": "src",
+        "paths": {
+            "@styled": ["utils/styled"],
+            "@test-utils": ["utils/test-utils"],
+            "@components": ["components"],
+            "@effects": ["effects"],
+            "@effects/*": ["effects/*"],
+            "@components/*": ["components/*"],
+            "@constants/*": ["constants/*"],
+            "@containers": ["containers"],
+            "@containers/*": ["containers/*"],
+            "@store": ["store"],
+            "@store/*": ["store/*"],
+            "@theme": ["theme"],
+            "@theme/*": ["theme/*"],
+            "@utils": ["utils"],
+            "@utils/*": ["utils/*"],
+            "@hoc": ["hoc"],
+            "@hoc/*": ["hoc/*"]
+        }
+    },
+    "include": ["src"],
+    "exclude": ["node_modules"]
+}
